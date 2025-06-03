@@ -278,6 +278,88 @@ img {
 }
 
 /*===== MEDIA QUERIES =====*/
+@media screen and (max-width: 574px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__img {
+    position: relative;
+    width: 200px;
+    margin: 0 auto 2rem;
+    bottom: auto;
+    order: -1; /* Переміщує лого на початок flex-контейнера */
+  }
+
+  .home__data {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+    text-align: center;
+    order: 1;
+  }
+
+  .home__title {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+
+  .home__social {
+    justify-content: center;
+    margin-bottom: var(--mb-4);
+    order: 2;
+  }
+
+  .button-container {
+    align-items: center;
+    width: 100%;
+    order: 3;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .work__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .work__img-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .work__img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+  }
+
+  .work__description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .work__description h3 {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .work__description p {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+
+}
 @media screen and (max-width: 575px) {
 
   .home__data {
