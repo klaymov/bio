@@ -51,6 +51,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -103,6 +104,7 @@ img {
   display: grid;
   margin: 0 var(--mb-2);
   padding: 0 16px; /* додаємо відступи */
+  box-sizing: border-box; 
 }
 
 .l-header {
